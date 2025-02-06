@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'GenshinFont';
+    src: url('fonts/HYWenHei.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GenshinFont', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.resource, .date, .income, .rolls {
+    margin: 20px 0;
+}
+
+.resource img {
+    width: 60px;
+    height: 60px;
+}
+
+.resource div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.income {
+    text-align: left;
+}
+
+.income h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.income ul {
+    list-style: none;
+    padding: 0;
+}
+
+.income li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(135deg, #F2F2F2, #5F8E9D);
+    color: #000;
+    font-family: 'GenshinFont', Arial, sans-serif;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5F8E9D, #F2F2F2);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.rolls p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+#totalResourceBefore, #dailyBonus, #stardustBonus, #spiralAbyssBonus, #welkinBonus, #totalRollsAfter {
+    font-weight: bold;
+    color: #ff6f61;
+}

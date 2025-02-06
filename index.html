@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resource Calculator</h1>
+
+        <!-- Input Resource -->
+        <div class="resource">
+            <div>
+                <label for="resource2">Genesis Crystals:</label>
+                <input type="number" id="resource2" placeholder="input cry" min="0">
+            </div>
+            <div>
+                <label for="resource3">Primogems:</label>
+                <input type="number" id="resource3" placeholder="input primo" min="0">
+            </div>
+            <div>
+                <label for="resource4">Intertwined Fate:</label>
+                <input type="number" id="resource4" placeholder="input IF" min="0">
+            </div>
+        </div>
+
+        <!-- Daily Mission -->
+        <div class="income">
+            <h2>Bonus Options</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="dailyCheckbox">
+                    <label for="dailyCheckbox">Daily Mission</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="welkinCheckbox">
+                    <label for="welkinCheckbox">Blessing of the Welkin</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="stardustCheckbox">
+                    <label for="stardustCheckbox">Stardust Exchange</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="spiralAbyssCheckbox">
+                    <label for="spiralAbyssCheckbox">Spiral Abyss</label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tanggal -->
+        <div class="date">
+            <label for="customDate">Pilih Tanggal:</label>
+            <input type="date" id="customDate">
+        </div>
+
+        <!-- Tombol Perhitungan -->
+        <div>
+            <button onclick="calculateResults()">HITUNG</button>
+        </div>
+
+        <!-- Output -->
+        <div class="rolls">
+            <h2>Hasil Perhitungan</h2>
+            <p>Resource Before: <span id="totalResourceBefore">0</span></p>
+            <p>Daily: <span id="dailyBonus">+0</span></p>
+            <p>Stardust Exchange: <span id="stardustBonus">+0</span></p>
+            <p>Spiral Abyss: <span id="spiralAbyssBonus">+0</span></p>
+            <p>Blessing of the Welkin: <span id="welkinBonus">0</span></p>
+            <p>Total Pull: <span id="totalRollsAfter">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
