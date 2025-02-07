@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
         <h1>Resource Calculator</h1>
 
@@ -43,6 +44,10 @@
                     <label for="stardustCheckbox">Stardust Exchange</label>
                 </li>
                 <li>
+                    <input type="checkbox" id="imaginariumTheaterCheckbox">
+                    <label for="imaginariumTheaterCheckbox">Imaginarium Theater</label>
+                </li>
+                <li>
                     <input type="checkbox" id="spiralAbyssCheckbox">
                     <label for="spiralAbyssCheckbox">Spiral Abyss</label>
                 </li>
@@ -51,27 +56,37 @@
 
         <!-- Tanggal -->
         <div class="date">
-            <label for="customDate">Pilih Tanggal:</label>
+            <label for="customDate">Select Date:</label>
             <input type="date" id="customDate">
         </div>
 
         <!-- Tombol Perhitungan -->
         <div>
-            <button onclick="calculateResults()">HITUNG</button>
+            <button onclick="calculateResults()">CALCULATE</button>
         </div>
 
         <!-- Output -->
         <div class="rolls">
-            <h2>Hasil Perhitungan</h2>
+            <h2>RESULT</h2>
+        <style> p {text-align: justify;}</style>
+
             <p>Resource Before: <span id="totalResourceBefore">0</span></p>
             <p>Daily: <span id="dailyBonus">+0</span></p>
             <p>Stardust Exchange: <span id="stardustBonus">+0</span></p>
-            <p>Spiral Abyss: <span id="spiralAbyssBonus">+0</span></p>
             <p>Blessing of the Welkin: <span id="welkinBonus">0</span></p>
+            <p>Spiral Abyss: <span id="spiralAbyssBonus">+0</span></p>
+            <p>Imaginarium Theater: <span id="imaginariumTheaterBonus">+0</span></p>
             <p>Total Pull: <span id="totalRollsAfter">0</span></p>
-        </div>
-    </div>
+            </div>
 
-    <script src="script.js"></script>
+
+             <footer id="kopirek">&copy; heiaeya</footer>
+        </div>
+
+    <script src="script2.js"></script>
+
 </body>
+
+
+
 </html>

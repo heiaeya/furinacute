@@ -134,3 +134,12 @@ button:hover {
     font-weight: bold;
     color: #ff6f61;
 }
+
+#imaginariumTheaterBonus {
+    font-weight: bold;
+    color: #ff6f61;
+}
+.footer {
+position: absolute;
+font-weight: bold;
+}
