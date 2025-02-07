@@ -104,7 +104,7 @@ function calculateResults() {
 
     // Update output di HTML
     document.getElementById("totalResourceBefore").innerText = `${totalResourceBefore} (${calculateRolls(totalResourceBefore)} pull)`;
-    document.getElementById("totalRollsAfter").innerText = `${totalRollsAfter.toFixed(2)} pull`;
+    document.getElementById("totalRollsAfter").innerText = `${totalRollsAfter.toFixed(0)} pull`;
     document.getElementById("dailyBonus").innerText = `+${dailyBonus} (${calculateRolls(dailyBonus)} pull)`;
     document.getElementById("stardustBonus").innerText = `+${stardustBonus} pull`;
     document.getElementById("spiralAbyssBonus").innerText = `+${spiralAbyssBonus} (${calculateRolls(spiralAbyssBonus)} pull)`;
